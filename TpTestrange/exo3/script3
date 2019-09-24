@@ -1,0 +1,13 @@
+#!/bin/bash
+echo "chaine" 
+read chaine
+rm fichier
+ls >>fichier 
+cat fichier
+nbligne=`cat fichier | wc -l`
+echo $nbligne
+for (( i = 1; i <= $nbligne; i++ ));do 
+vare=`awk -v ligne=$i ' NR == ligne { print $0 }'  fichier`
+        var=$(grep -c $chaine $vare)
+        echo $var
+done

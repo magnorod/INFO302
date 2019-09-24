@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "nom du fichier"
+read nomdufichier
+echo " chaine a test"
+read chaine
+if [ -f $nomdufichier ] && [ -s $nomdufichier ]
+then  
+	var=$(grep -c $chaine $nomdufichier)
+	echo $var
+else
+echo Existe pas ou est nul >&2 ## this msg goes to stderr
+fi

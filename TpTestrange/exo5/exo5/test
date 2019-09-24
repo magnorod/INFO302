@@ -1,0 +1,33 @@
+#!/bin/bash
+
+echo "Logiciel de sauvegarde"
+let "i=1"
+read nom
+if [ -f $nom ]
+then
+	if [ -f $nom.bak ]
+	then
+	bool=false
+       		until [[ $bool = true ]]; do
+	
+			 abc=${nom}.$i
+			 if [ -f $abc.bak ]
+			 then
+			let "i += 1" 
+        		cp $nom $abc.bak
+			else
+			cp $nom $abc.bak
+			echo "fichier enregistré au nom de $nom.$i.bak"
+			bool=true
+			fi
+        	done
+		
+	else
+	cp $nom{,.bak}
+	fi
+else
+	echo "existe ap"
+fi
+
+
+

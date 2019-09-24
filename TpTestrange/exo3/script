@@ -1,0 +1,5 @@
+#!/bin/bash
+if grep -q "bon" "fichiertext" ; then
+echo "trouve"
+else echo "pas trouvé"
+fi

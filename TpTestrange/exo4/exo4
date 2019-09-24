@@ -1,0 +1,24 @@
+#!/bin/bash
+echo "combien de nombres a saisir ?"
+until [[ ${nombre} =~ ^[0-9]+$ ]]; do
+read nombre
+done
+
+for (( i=${nombre}; i>=1; i--))
+do
+	echo "nombre ($i)  ="
+	until [[ ${nb[$i]} =~ ^[0-9]+$ ]] || [[ ${nb[$i]} =~ ^\-[0-9]+$ ]]; do
+		read nb[$i]
+	done
+done
+
+echo "les nombres sont  ${nb[*]} "
+
+for (( i=${nombre}; i>=1; i--))
+do
+	if [ ${nb[i]} -ge 0 ]
+	then
+		echo "${nb[i]} est un nombre positif"
+	fi
+done
+

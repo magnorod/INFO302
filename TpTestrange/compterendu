@@ -1,0 +1,40 @@
+exo 1
+
+1) la commande rev inverse une chaine de caractère
+osboxes@osboxes:~/tptest$ rev compterendu
+1 oxe
+erètcarac ed eniahc enu esrevni ver ednammoc al )1
+)2
+
+2)il suffit de mettre >> nom_du_fichier_output après l'instruction
+osboxes@osboxes:~/tptest$ rev compterendu >> test
+osboxes@osboxes:~/tptest$ ls
+compterendu  exo1  test
+osboxes@osboxes:~/tptest$ cat test
+1 oxe
+
+erètcarac ed eniahc enu esrevni ver ednammoc al )1
+udneretpmoc ver $tsetpt/~:sexobso@sexobso
+exo 1
+1) la commande rev inverse une chaine de caractère
+2)
+
+)2
+osbox
+
+exo 2
+
+1) la commande calendar nous indique tout les évenements historiques à la date et la date-1 de la commande par exemple si on ecrit calendar on aura les evenements majeurs qui se seront produits le 23 septembre et le 22 septembre
+
+2)info calendar
+
+3)calendar -A 2
+
+4)il suffit de créer un lien symbolique avec la commande ln -s /nomdudossier nomdulien
+ensuite il nous suffit de taper le nom du script uniquement dans le terminal afin de lancer celui ci
+
+exo3
+
+1)grep -c "bon" fichiertext
+
+

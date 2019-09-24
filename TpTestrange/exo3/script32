@@ -1,0 +1,4 @@
+#!/bin/bash
+x=vide;
+y=bon;
+if [ $x != "" ] && [ ! -d $x]
